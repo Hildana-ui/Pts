@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-container">
+    <img src="{{ url_for('static', filename='images/esaias-tan-JeWyWRMH4rQ-unsplash.jpg') }}" class="hero-image">
+    <div class="hero-text">
+        <h1>Welcome to the Hospital Cardless System</h1>
+        <p>Experience a seamless and secure way to manage your health. Our cardless system ensures you have access to your medical records, appointments, and healthcare providers at your fingertips.</p>
+    </div>
+</div>
+<div class="sign-in-button-container">
+    <button onclick="location.href='/signin'">Sign In</button>
+</div>
+{% endblock %}
+
