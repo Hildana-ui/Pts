@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Patients</h1>
-<ul>
-    {% for patient in patients %}
-    <li>{{ patient.name }} - <a href="{{ url_for('generate_qr', patient_id=patient.id)  }}">Generate QR Code</a></li>
-    {% endfor %}
-</ul>
-{% endblock %}
